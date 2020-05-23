@@ -15,7 +15,7 @@ Data3 <- cbind(DateTime, subset(data2, select = -c(Date, Time)))
 png(filename = "plot4.png")
 
 ##Create plot window
-par(mfrow = c(2,2), mar= c(4,2,4,2))
+par(mfrow = c(2,2), mar= c(4,4,4,4))
 
 ## Plot top left chart
 plot(Data3$DateTime, Data3$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power", frame.plot = TRUE, col = "black", lty = "solid", lwd = 0.5)
